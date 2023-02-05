@@ -16,9 +16,9 @@ a{
 
 .navbar{
     display:flex;
-    justify-content: left;
+    justify-content: right;
     padding: 10px;
-    margin: 2% 5%;
+    margin: 2% 8%;
     border-width: 2px;
     box-sizing: border-box;
     border-style: solid;
@@ -27,6 +27,8 @@ a{
 
 .name
 {
+    position: absolute;
+    left: 9%;
     font-weight: 100;
     font-family: uni-05, sans-serif;
     margin: -1px 0 0 20px;
@@ -34,8 +36,7 @@ a{
 }
 
 .navItem{
-    position: absolute;
-    right: 10%;
+    margin: 0 3%;
     font-size: 1.5rem;
 }
 
@@ -46,7 +47,7 @@ a{
     border-width: 2px;
     border-style:solid;
     height: 200px;
-    margin: 10% 20%;
+    margin: 10% 15%;
     padding: 5%;
     text-align: center;
 }
