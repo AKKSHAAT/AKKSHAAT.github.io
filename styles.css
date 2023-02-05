@@ -8,7 +8,9 @@ body{
     margin: 0;
     background-color: #FDEBED;
 } 
-
+p{
+    text-align: left;
+}
 a{
     text-decoration: none;
     color: black;
@@ -31,7 +33,7 @@ a{
     left: 9%;
     font-weight: 100;
     font-family: uni-05, sans-serif;
-    margin: -1px 0 0 20px;
+    margin: 0 0 0 20px;
     font-size: 1.2rem;
 }
 
@@ -42,12 +44,21 @@ a{
 
 /* container One */
 
-#containerOne{
+.container{
     font-size: 21px;
     border-width: 2px;
     border-style:solid;
     height: 200px;
-    margin: 10% 15%;
-    padding: 5%;
+    margin: 8% 12%;
+    padding: 3%;
     text-align: center;
+    box-shadow: 0.3rem 0.42rem 0 -1px #FDEBED, 6px 8px 0 ;
+}
+.link{
+    color: #AAE3E2;
+}
+
+#cta{
+    height: 100px;
+    box-shadow: 0.31rem 0.42rem;
 }
