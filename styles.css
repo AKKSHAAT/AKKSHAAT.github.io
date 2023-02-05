@@ -1,0 +1,51 @@
+@font-face{
+    font-family: uni-05;
+    src: url(font/uni05_53.ttf);
+}
+
+body{
+    font-family: 'DM Mono', monospace;
+    margin: 0;
+    background-color: #FDEBED;
+} 
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    display:flex;
+    justify-content: left;
+    padding: 10px;
+    margin: 2% 5%;
+    border-width: 2px;
+    box-sizing: border-box;
+    border-style: solid;
+    box-shadow: 0.3rem 0.42rem 0 -1px #FDEBED, 6px 8px 0 ;
+}
+
+.name
+{
+    font-weight: 100;
+    font-family: uni-05, sans-serif;
+    margin: -1px 0 0 20px;
+    font-size: 1.2rem;
+}
+
+.navItem{
+    margin: 0 0 0 80%;
+    font-size: 1.5rem;
+}
+
+/* container One */
+
+#containerOne{
+    font-size: 21px;
+    border-width: 2px;
+    border-style:solid;
+    height: 200px;
+    margin: 10% 20%;
+    padding: 5%;
+    text-align: center;
+}
