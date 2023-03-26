@@ -2,34 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
-    <!-- font awsome-->
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- font awsome -->
     <script src="https://kit.fontawesome.com/ffbf87d143.js" crossorigin="anonymous"></script>
-    <!-- css -->
+    <!-- styleshet -->
     <link rel="stylesheet" href="styles.css">
-    <title>AKSHAT</title>
-</head>
-<body>
-    <nav class="navbar">
-        <a href="#" class="name">akshat</a>
-        <a href="https://github.com/AKKSHAAT/" class="navItem" target="_blank"> <i class="fa-brands fa-github"></i> </a>
-        <a href="https://www.behance.net/AKKSHAAT" class="navItem" target="_blank"> <i class="fa-brands fa-behance"></i> </a>
-    </nav>
 
-    <div id="containerOne" class="container">
-        <b>Web Developer</b>
-        <p> Personal
-            <a href="https://github.com/AKKSHAAT/web-dev-projects" class="link"><i class="fa-solid fa-code-branch"></i> projects</a>
-            I have worked on
-        </p>
-    </div> 
-    <div id="cta" class="container">
-        <b>Contact me</b>
-        <p><i class="fa-regular fa-envelope"></i> akkshaat@gmail.com</p>
-    </div>
+    <title>akkshat</title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">akshat</div>
+        <div class="nav">
+            <a href="#home">home</a>
+            <a href="#projects">work</a>
+            <a href="#contact">contact</a> 
+        </div>
+        <a href="#cta" class="btn">get a website!</a>
+    </nav>
+    
+    <section class="container-one" id="home">
+        <h1 class="heroText">WEB</h1>
+        <h1 class="heroText2">DEVELOPER</h1>
+    </section>
+
+    <section class="container-two" id="projects">
+        <h2>projects</h2>
+
+        <section class="card-container">
+
+            <div class="card">
+                <div class="image mg1"></div>
+                <h3>Title</h3>
+                <div class="card-link">
+                    <a href=""><i class="fa-solid fa-play"></i></a>
+                    <a href=""><i class="fa-solid fa-code"></i></a>
+                </div>
+                    <p>1 Lorem ipsum dolor</p>
+              </div>
+        
+              <div class="card">
+                <div class="image"></div>
+                <h3>Title</h3>
+                <div class="card-link">
+                    <a href=""><i class="fa-solid fa-play"></i></a>
+                    <a href=""><i class="fa-solid fa-code"></i></a>
+                </div>
+                    <p>Lorem ipsum dolor</p>
+              </div>
+        
+              <div class="card">
+                <div class="image "></div>
+                <h3>Title</h3>
+                <div class="card-link">
+                    <a href=""><i class="fa-solid fa-play"></i></a>
+                    <a href=""><i class="fa-solid fa-code"></i></a>
+                </div>
+                    <p>Lorem ipsum dolor</p>
+              </div>
+
+        </section>
+    </section>
+
+    <section class="container-three" id="cta">
+        <h2>want one?</h2>
+        <form action="">
+            <div>
+                <input type="text" class="text-in" placeholder="name">
+                <input type="text" class="text-in" placeholder="your email">
+            </div>
+            <textarea name="" id="" cols="90" rows="10" class="text-in message"></textarea>
+        </form>
+    </section>
+
+    <section class="container-four" id="contact">
+        <h3>follow me</h3>
+        <div class="social">
+            <i class="fa-brands fa-behance"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+
+        <a href="mailto:akkshat@gmail.com"> > akkshat@gmail.com </a>
+    </section>
+
+        <!-- baffle.js -->
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
+    <script type="text/javascript">
+
+        const webText = baffle(".heroText");
+        const devText = baffle(".heroText2");
+
+        webText.set({
+            characters : '░▓░ <<▓█▒ ▓░██/ /░< ▒>█▒▓ █▒░▒ ▓░▒ ▓▓░█ ▒/█▒',
+            speed: 210
+        });
+        devText.set({
+            characters : '░▓░ <<▓█▒ ▓░██/ /░< ▒>█▒▓ █▒░▒ ▓░▒ ▓▓░█ ▒/█▒',
+            speed: 120
+        });
+
+        webText.start();
+        webText.reveal(10000);
+
+        devText.start();
+        devText.reveal(4000);
+
+    </script>
+
+    <script src="index.js"></script>
+
 </body>
 </html>
