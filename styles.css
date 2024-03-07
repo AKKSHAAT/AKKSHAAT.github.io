@@ -247,16 +247,19 @@ form {
 }
 
 @media (max-width: 1200px) {
+  .container-one {
+    height: 250px;
+  }
   .heroText {
     margin: 1rem;
-    font-size: 3.4rem;
-    max-width: 250px;
+    font-size: calc(7vw + 1rem);
+    width: auto;
   }
 
   .container-two h2 {
     margin: 0;
-    font-size: 3.4rem;
-    width: 250px;
+    font-size: calc(7vw + 1rem);
+    width: auto;
   }
 
   .navbar {
@@ -267,7 +270,9 @@ form {
     background: none;
   }
   .logo {
-    font-size: 5rem;
+    font-size: calc(7vw + 1rem);
+    width: auto;
+    /* font-size: 5rem; */
   }
   .nav {
     display: none;
