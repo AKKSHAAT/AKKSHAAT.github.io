@@ -37,8 +37,10 @@ i:hover {
 }
 p {
   margin: 0 7px;
-  font-family: "Lato", sans-serif;
   color: var(--black);
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 h1 {
@@ -163,6 +165,12 @@ h2 {
   background-color: var(--purple);
   border-radius: 13px 13px 0 0;
   background-size: cover;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .card > h3 {
