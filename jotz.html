@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/ffbf87d143.js" crossorigin="anonymous"></script>
+    <!-- styleshet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>akkshat</title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">akshat</div>
+        <div class="nav">
+            <a href="/">home</a>
+            <a href="/#projects">work</a>
+            <a href="#contact">contact</a> 
+        </div>
+        <a href="#cta" class="btn">get a website!</a>
+    </nav>
+    
+    <section class="container-one" id="home">
+        <h1 class="heroText">Jotz</h1>
+        <img class="heroImage image" src="./imgs/jotz/jotz_ss.png" alt="Jotz">
+    </section>
+
+    <section  class="container-two" id="projects">
+        <h2 style="padding:5rem 0 0 0;">About</h2>
+        <p style="padding:0 2rem;">
+            <ul> > Jotz is a desktop application built using ReactJS and ElectronJS.</ul>
+            <ul> > It is designed to help users manage their tasks and notes efficiently.</ul>
+            <ul> > The application features a user-friendly interface, allowing users to create, edit, and delete notes with ease.</ul>
+            <ul> > Jotz also supports markdown formatting, enabling users to style their notes as they wish.</ul>
+            <ul> > Additionally, it has Pomodoro timer functionality to help users manage their time effectively.</ul>
+        </p>
+        <h3 style="margin: 20px 0;"> 
+            <a href="https://github.com/akkshaat/jotz" style="color: #37306b" target="_blank" rel="noopener">
+               💻 https://jotz.akkshat.com
+            </a>
+        </h3>
+        <h3 style="color: #ec5858; margin-left: 30px;">Downlaod link will be availale soon </h3>
+    </section>
+
+
+    <section class="container-four" id="contact">
+        <h3>socials</h3>
+        <div class="social" >
+            <a href="https://x.com/akkshaa1">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            
+            <a href="https://github.com/akkshaat">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            
+            <a href="https://linkedin.com/in/akkshaat">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+        <a href="mailto:akkshat@gmail.com"> > akkshat@gmail.com </a>
+    </section>
+
+        <!-- baffle.js -->
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+
+    <script type="text/javascript">
+
+        const webText = baffle(".heroText");
+
+        webText.set({
+            characters : '░▓░ <<▓█▒ ▓░██/ /░< ▒>█▒▓ █▒░▒ ▓░▒ ▓▓░█ ▒/█▒',
+            speed: 210
+        });
+
+        webText.start();
+        webText.reveal(10000);
+
+    </script>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
